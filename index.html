@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Everyone Can Sing</title>
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    </br>
+    <h1> Everyone-Can-Sing: Zero-Shot Singing Voice Synthesis and Conversion with Speech Reference </h1>
+    </br>
+    <h3> Shuqi Dai, Yunyun Wang, Roger B. Dannenberg, Zeyu Jin</h3>
+    </br>
+    <h3> Demo 1:  Comparison Study </h3>
+    <table>
+  <tbody>
+    <tr>
+        <td>Source</td>
+        <td>Target Reference</td>
+        <td>Zero-shot SVS (a) <br> With Score and Lyrics </td>
+        <td>Zero-Shot SVC (b) <br> Given Lyrics Alignment  </td>
+        <td>Zero-Shot SVC (c) <br> With Local Content Embedding </td>
+        <td>GR0 </td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none"><audio controls src="demo/F1-忘记他-Pop-正常01.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/MaleEnglishSpeech1.wav", controlsList="noplaybackrate nodownload"></audio>Speech</td>
+        <td><audio controls src="demo/exp1/2044001635_GT_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/5___Chinese-Pop-Female_F1_忘记他-Pop-正常_01_MaleEnglishSpeech1_f0shifted_G.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001635_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+    </tr>
+    <tr>
+        <td style="border-top: none; border-bottom: none"></td>
+        <td><audio controls src="demo/MaleEnglishSpeech3.wav", controlsList="noplaybackrate nodownload"></audio>Speech</td>
+        <td><audio controls src="demo/exp1/2044001666_GT_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/5___Chinese-Pop-Female_F1_忘记他-Pop-正常_01_MaleEnglishSpeech3_f0shifted_G.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001666_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+    </tr>
+    <tr>
+        <td style="border-top: none; border-bottom: none"></td>
+        <td><audio controls src="demo/FemaleEnglishSpeech2.wav", controlsList="noplaybackrate nodownload"></audio>Speech</td>
+        <td><audio controls src="demo/5___Chinese-Pop-Female_F1_忘记他-Pop-正常_01_FemaleEnglishSpeech2_G.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/5___Chinese-Pop-Female_F1_忘记他-Pop-正常_01_FemaleEnglishSpeech2_G.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2092003441_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+    </tr>
+    <tr>
+        <td style="border-top: none"></td>
+        <td><audio controls src="demo/MaleEnglishSing2A.wav", controlsList="noplaybackrate nodownload"></audio>Singing</td>
+        <td><audio controls src="demo/exp1/2044001665_GT_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/5___Chinese-Pop-Female_F1_忘记他-Pop-正常_01_MaleEnglishSing2A_f0shifted_G.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001665_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col style="width: 25%;">
+    <col style="width: 26.5556%;">
+    <col style="width: 23.4444%;">
+    <col style="width: 25%;">
+  </colgroup>
+</table>
+    
+    </br>
+    <h3> Demo 2:  Ablation Study on Different Model Conditions </h3>
+    <table>
+        <tbody>
+        <tr>
+            <td> Generated (ExpressiveSinger) </td>
+            <td> GT Human Singing </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female1_忘记他-Pop-正常_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female1_忘记他-Pop-_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+
+        <tr>
+            <td><audio controls src="demo/exp2/Female2_ODelMioAmatoBen-Opera-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+
+        <tr>
+            <td><audio controls src="demo/exp2/letitgo_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/letitgo_kangaroo_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+
+        <tr>
+            <td><audio controls src="demo/exp2/caro_vibrato.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/lip_trill.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+</body>
+</html>
