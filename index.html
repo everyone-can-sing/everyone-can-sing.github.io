@@ -108,7 +108,31 @@
         <td><audio controls src="demo/exp1/2044001635_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
     </tr>
 
-  
+    <tr>
+        <td style="border-bottom: none"><audio controls src="demo/F4-LetItBe-Pop-抒情01.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/FemaleEnglishSpeech2.wav", controlsList="noplaybackrate nodownload"></audio>Speech</td>
+        <td><audio controls src="demo/exp1/2044001635_GT_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/5___English-Pop-Female_F4_LetItBe-Pop-抒情_01_FemaleEnglishSpeech2_G.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001635_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001635_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+    </tr>
+    <tr>
+        <td style="border-top: none; border-bottom: none"></td>
+        <td><audio controls src="demo/MaleChineseSing1B.wav", controlsList="noplaybackrate nodownload"></audio>Singing</td>
+        <td><audio controls src="demo/exp1/2044001666_GT_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/5___English-Pop-Female_F4_LetItBe-Pop-抒情_01_MaleChineseSing1B_f0shifted.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001666_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001635_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+    </tr>
+    <tr>
+        <td style="border-top: none; border-bottom: none"></td>
+        <td><audio controls src="demo/MaleChineseSpeech1.wav", controlsList="noplaybackrate nodownload"></audio>Speech</td>
+        <td><audio controls src="demo/exp1/2044001666_GT_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/5___English-Pop-Female_F4_LetItBe-Pop-抒情_01_MaleChineseSpeech1.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001666_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        <td><audio controls src="demo/exp1/2044001635_VISinger2_22khz.wav", controlsList="noplaybackrate nodownload"></audio></td>
+    </tr>
+
   </tbody>
   <colgroup>
     <col style="width: 25%;">
@@ -119,36 +143,24 @@
 </table>
     
     </br>
-    <h3> Demo 2:  Ablation Study on Different Model Conditions </h3>
+    <h3> Demo 2: &nbsp; Ablation Study on Different Model Conditions </h3>
+    </br>
+    <p> 1. Unseen Speech Target Reference vs. Singing Target Reference </p>
     <table>
         <tbody>
         <tr>
-            <td> Generated (ExpressiveSinger) </td>
-            <td> GT Human Singing </td>
+            <td> Source </td>
+            <td> Unseen Speech Target </td>
+            <td> Zero-shot SVS (a) </td>
+            <td> Unseen Singing Target </td>
+            <td> Zero-shot SVS (a) </td>
         </tr>
         <tr>
             <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
             <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls src="demo/exp2/Female1_忘记他-Pop-正常_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
-            <td><audio controls src="demo/exp2/Female1_忘记他-Pop-_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
-        </tr>
-
-        <tr>
-            <td><audio controls src="demo/exp2/Female2_ODelMioAmatoBen-Opera-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
-        </tr>
-
-        <tr>
-            <td><audio controls src="demo/exp2/letitgo_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
-            <td><audio controls src="demo/exp2/letitgo_kangaroo_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
-        </tr>
-
-        <tr>
-            <td><audio controls src="demo/exp2/caro_vibrato.wav", controlsList="noplaybackrate nodownload"></audio></td>
-        </tr>
-        <tr>
-            <td><audio controls src="demo/exp2/lip_trill.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
         </tr>
         </tbody>
         <colgroup>
@@ -156,5 +168,318 @@
             <col style="width: 26.5556%;">
         </colgroup>
     </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Unseen Speech Target </td>
+            <td> Zero-shot SVC (b) </td>
+            <td> Unseen Singing Target </td>
+            <td> Zero-shot SVC (b) </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Unseen Speech Target </td>
+            <td> Zero-shot SVC (c) </td>
+            <td> Unseen Singing Target </td>
+            <td> Zero-shot SVC (c) </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    </br>
+
+
+
+
+
+    <p> 2. Mixed Training Strategy vs. Singing Training Only </p>
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Unseen Target </td>
+            <td> &nbsp;Zero-shot SVS (a) - Mixed Training&nbsp;</td>
+            <td> &nbsp;Zero-shot SVS (a) - Singing Training Only&nbsp;</td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Unseen Target </td>
+            <td> &nbsp;Zero-shot SVC (b) - Mixed Training &nbsp;</td>
+            <td> &nbsp;Zero-shot SVC (b) - Singing Training Only &nbsp;</td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    </br>
+
+
+
+    <p> 3. Adjust Pitch (applies pitch adjustment during inference) vs. Original Pitch </p>
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Unseen Target </td>
+            <td> &nbsp;Zero-shot SVS (a) - Adjust Pitch&nbsp; </td>
+            <td> &nbsp;Zero-shot SVS (a) - Original Pitch &nbsp;</td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Unseen Target </td>
+            <td> &nbsp;Zero-shot SVC (b) - Adjust Pitch&nbsp; </td>
+            <td> &nbsp;Zero-shot SVC (b) - Original Pitch &nbsp;</td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Unseen Target </td>
+            <td>  &nbsp;Zero-shot SVC (c) - Adjust Pitch &nbsp;</td>
+            <td>  &nbsp;Zero-shot SVC (c) - Original Pitch &nbsp;</td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    </br>
+
+    <p> 4. Cross Language (target reference and source/lyrics being in different languages) vs. Same Language </p>
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Cross Language Target </td>
+            <td> Zero-shot SVS (a) </td>
+            <td> Same Language Target</td>
+            <td> Zero-shot SVS (a) </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Cross Language Target </td>
+            <td> Zero-shot SVC (b) </td>
+            <td> Same Language Target </td>
+            <td> Zero-shot SVC (b) </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Cross Language Target </td>
+            <td> Zero-shot SVC (c) </td>
+            <td> Same Language Target </td>
+            <td> Zero-shot SVC (c) </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    </br>
+
+
+    <p> 5. Different Gender (the target reference and source (or score pitch range) are of different genders) vs. Same Gender </p>
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Different Gender Target </td>
+            <td> Zero-shot SVS (a) </td>
+            <td> Same Gender Target</td>
+            <td> Zero-shot SVS (a) </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Different Gender Target </td>
+            <td> Zero-shot SVC (b) </td>
+            <td> Same Gender Target </td>
+            <td> Zero-shot SVC (b) </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    <table>
+        <tbody>
+        <tr>
+            <td> Source </td>
+            <td> Different Gender Target </td>
+            <td> Zero-shot SVC (c) </td>
+            <td> Same Gender Target </td>
+            <td> Zero-shot SVC (c) </td>
+        </tr>
+        <tr>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_GT.wav", controlsList="noplaybackrate nodownload"></audio></td>
+            <td><audio controls src="demo/exp2/Female4_LetItBe-Pop-抒情_generated.wav", controlsList="noplaybackrate nodownload"></audio></td>
+        </tr>
+        </tbody>
+        <colgroup>
+            <col style="width: 25%;">
+            <col style="width: 26.5556%;">
+        </colgroup>
+    </table>
+
+    </br>
+
+    <p> 6. More Opera Style Samples </p>
+
 </body>
 </html>
